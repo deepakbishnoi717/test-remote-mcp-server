@@ -1,8 +1,8 @@
-from fastmcp import FastMCP
+from fastmcp.server import create_proxy
 
 # Create a proxy to your remote FastMCP Cloud server
 # FastMCP Cloud uses Streamable HTTP (default), so just use the /mcp URL
-mcp = FastMCP.as_proxy(
+mcp = create_proxy(
     "https://splendid-gold-dingo.fastmcp.app/mcp",  # Standard FastMCP Cloud URL
     name="Nitish Server Proxy"
 )
