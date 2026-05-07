@@ -8,6 +8,11 @@ wheels/
 
 # Virtual environments
 .venv
+.env
 
 # Database files
 *.db
+
+# Generated media
+manim_outputs/
+.streamlit/
